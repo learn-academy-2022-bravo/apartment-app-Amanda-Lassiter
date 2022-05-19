@@ -102,6 +102,7 @@ Once you're able to clone the repository, within the root of the project directo
 
 ```bash
 bundle 
+   -Note: Use bundle info (gemname) to see where a bundle gem is installed. 
 yarn
 rails db:setup
 ```
@@ -113,7 +114,12 @@ rails s
 
 See what is available already in the application.
 - What can a USER do? 
-- What views (pages, components) are available?
+```bash
+- A user can see "React in Rails with Devise" 
+- A user can navigate to a "sign in" page with a sign in form
+- A user can navigate to a "sign up" page with a sign up form
+- A user can see "Home" written on the home page
+
 
 ## 🏡 Apartment Resource
 The Devise User model is going to have an association with the Apartment model. In this situation, the User will have many apartments and the Apartments will belong to a User.
@@ -121,7 +127,7 @@ The Devise User model is going to have an association with the Apartment model. 
 ```bash
 rails generate resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string image:text user_id:integer
 rails db:migrate
-```
+```git 
 
 ### User and Apartment Associations
 The Apartments will belong to a User and a User will have many apartments.
