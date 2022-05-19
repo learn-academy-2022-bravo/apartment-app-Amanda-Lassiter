@@ -113,13 +113,20 @@ rails s
 ```
 
 See what is available already in the application.
+```
 - What can a USER do? 
 ```bash
+
 - A user can see "React in Rails with Devise" 
 - A user can navigate to a "sign in" page with a sign in form
 - A user can navigate to a "sign up" page with a sign up form
 - A user can see "Home" written on the home page
 
+ -Note: Use bundle info (gemname) to see where a bundle gem is installed. 
+
+- What views (pages, components) are available?
+
+```
 
 ## 🏡 Apartment Resource
 The Devise User model is going to have an association with the Apartment model. In this situation, the User will have many apartments and the Apartments will belong to a User.
